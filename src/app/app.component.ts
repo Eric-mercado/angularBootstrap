@@ -3,14 +3,18 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: ['./app.component.css']
 })
 export class AppComponent {
   query:  string;
   artists: object; 
 
+  showArtist(item){
+    this.query = item.name; 
+  }
+
   constructor(){
-      this.query = 'Barot'
+      this.query = ''
       this.artists =  [
         {
           "name":"Barot Bellingham",
