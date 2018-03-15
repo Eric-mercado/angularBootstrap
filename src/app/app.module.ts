@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ArtistItemsComponent } from './artist-items/artist-items.component';
+import { SearchArtistPipe } from './search-artist.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArtistItemsComponent
+    ArtistItemsComponent,
+    SearchArtistPipe
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
